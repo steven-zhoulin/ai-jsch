@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'jsch'
+version '0.1.52'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: ['*.jar'])
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
