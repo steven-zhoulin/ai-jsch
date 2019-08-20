@@ -33,6 +33,7 @@ import ai.jcraft.jsch.JSchException;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+
 import org.ietf.jgss.GSSContext;
 import org.ietf.jgss.GSSCredential;
 import org.ietf.jgss.GSSException;
@@ -49,7 +50,7 @@ public class GSSContextKrb5 implements ai.jcraft.jsch.GSSContext {
     getSystemProperty(pUseSubjectCredsOnly);
 
   private GSSContext context=null;
-  public void create(String user, String host) throws JSchException{
+  public void create(String user, String host) throws JSchException {
     try{
       // RFC 1964
       Oid krb5=new Oid("1.2.840.113554.1.2.2");

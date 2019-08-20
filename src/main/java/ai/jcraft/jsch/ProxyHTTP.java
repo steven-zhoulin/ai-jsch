@@ -32,7 +32,7 @@ package ai.jcraft.jsch;
 import java.io.*;
 import java.net.*;
 
-public class ProxyHTTP implements Proxy{
+public class ProxyHTTP implements Proxy {
   private static int DEFAULTPORT=80;
   private String proxy_host;
   private int proxy_port;

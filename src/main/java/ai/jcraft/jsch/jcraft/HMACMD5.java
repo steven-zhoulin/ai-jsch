@@ -30,10 +30,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 package ai.jcraft.jsch.jcraft;
 
 import ai.jcraft.jsch.MAC;
-
 import java.security.*;
 
-public class HMACMD5 extends HMAC implements MAC {
+public class HMACMD5 extends HMAC implements MAC{
   private static final String name="hmac-md5";
 
   public HMACMD5(){

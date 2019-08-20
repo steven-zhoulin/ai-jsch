@@ -30,9 +30,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 package ai.jcraft.jsch.jce;
 
 import ai.jcraft.jsch.Cipher;
+
 import javax.crypto.spec.*;
 
-public class BlowfishCBC implements Cipher{
+public class BlowfishCBC implements Cipher {
   private static final int ivsize=8;
   private static final int bsize=16;
   private javax.crypto.Cipher cipher;    

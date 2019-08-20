@@ -29,7 +29,6 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package ai.jcraft.jsch.jcraft;
 import com.jcraft.jzlib.*;
-import ai.jcraft.jsch.*;
 
 public class Compression implements ai.jcraft.jsch.Compression {
   static private final int BUF_SIZE=4096;

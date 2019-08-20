@@ -38,7 +38,7 @@ package ai.jcraft.jsch;
 import java.io.*;
 import java.net.*;
 
-public class ProxySOCKS5 implements Proxy{
+public class ProxySOCKS5 implements Proxy {
   private static int DEFAULTPORT=1080;
   private String proxy_host;
   private int proxy_port;

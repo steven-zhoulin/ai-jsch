@@ -30,9 +30,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 package ai.jcraft.jsch.jce;
 
 import ai.jcraft.jsch.Cipher;
+
 import javax.crypto.spec.*;
 
-public class AES256CBC implements Cipher{
+public class AES256CBC implements Cipher {
   private static final int ivsize=16;
   private static final int bsize=32;
   private javax.crypto.Cipher cipher;    

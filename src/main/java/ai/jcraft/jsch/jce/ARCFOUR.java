@@ -33,7 +33,7 @@ import ai.jcraft.jsch.Cipher;
 
 import javax.crypto.spec.*;
 
-public class ARCFOUR implements Cipher{
+public class ARCFOUR implements Cipher {
   private static final int ivsize=8;
   private static final int bsize=16;
   private javax.crypto.Cipher cipher;

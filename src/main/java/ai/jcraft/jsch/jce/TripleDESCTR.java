@@ -29,11 +29,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package ai.jcraft.jsch.jce;
 
-import ai.jcraft.jsch.Cipher;
 import javax.crypto.*;
 import javax.crypto.spec.*;
 
-public class TripleDESCTR implements Cipher{
+public class TripleDESCTR implements ai.jcraft.jsch.Cipher {
   private static final int ivsize=8;
   private static final int bsize=24;
   private javax.crypto.Cipher cipher;
@@ -67,10 +66,10 @@ public class TripleDESCTR implements Cipher{
       DESedeKeySpec keyspec=new DESedeKeySpec(key);
       SecretKeyFactory keyfactory=SecretKeyFactory.getInstance("DESede");
       SecretKey _key=keyfactory.generateSecret(keyspec);
-      synchronized(Cipher.class){
+      synchronized(ai.jcraft.jsch.Cipher.class){
         cipher.init((mode==ENCRYPT_MODE?
-                     Cipher.ENCRYPT_MODE:
-                     Cipher.DECRYPT_MODE),
+                     ai.jcraft.jsch.Cipher.ENCRYPT_MODE:
+                     ai.jcraft.jsch.Cipher.DECRYPT_MODE),
                     _key, new IvParameterSpec(iv));
       }
     }

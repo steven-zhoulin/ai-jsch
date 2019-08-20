@@ -30,9 +30,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 package ai.jcraft.jsch.jce;
 
 import ai.jcraft.jsch.Cipher;
+
 import javax.crypto.spec.*;
 
-public class AES192CTR implements Cipher{
+public class AES192CTR implements Cipher {
   private static final int ivsize=16;
   private static final int bsize=24;
   private javax.crypto.Cipher cipher;    
